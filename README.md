@@ -8,13 +8,17 @@ Automated installation and setup scripts for Ubuntu / Debian-based Linux systems
 
 ```
 linux-setup/
-├── settings/         → System-level settings (key remapping, etc.)
-├── browser/          → Browser installers (Brave, Chrome)
-├── code-editors/     → Code editor installers (VS Code, Antigravity IDE)
-├── cli-tools/        → Terminal tools, shell enhancements & utilities
-├── runtimes/         → Language runtimes & compilers
-├── devops-tools/     → DevOps, cloud CLI & container tools
-└── applications/     → GUI apps & system applications
+├── settings/             → System-level settings (key remapping, etc.)
+├── browser/              → Browser installers (Brave, Chrome)
+├── code-editors/         → Code editor installers (VS Code, Antigravity IDE)
+├── cli-tools/            → Terminal tools, shell enhancements & utilities
+├── runtimes/             → Language runtimes & compilers
+├── devops-tools/         → DevOps, cloud CLI & container tools
+├── applications/         → System tools & core applications
+├── daily-apps/           → Daily essentials (clipboard, media, chat, mail, VPN, etc.)
+├── document-apps/        → Office suites, note-taking, e-readers & book managers
+├── creative-apps/        → Audio, video, graphics, CAD & bootable disk tools
+└── hardware-analysis/    → Disk, CPU, GPU & hardware analysis tools
 ```
 
 ---
@@ -29,6 +33,7 @@ Remap the Right Alt key to Right Ctrl system-wide using `keyd`:
 cd settings
 chmod +x remap-rightalt-to-ctrl.sh
 ./remap-rightalt-to-ctrl.sh
+cd ..
 ```
 
 ### 2. 🌐 Browsers
@@ -74,9 +79,41 @@ for script in ./*.sh; do bash "$script"; done
 cd ..
 ```
 
-### 7. 📦 Applications
+### 7. 📦 Core Applications
 ```bash
 cd applications
+chmod +x ./*.sh
+for script in ./*.sh; do bash "$script"; done
+cd ..
+```
+
+### 8. ☕ Daily Applications
+```bash
+cd daily-apps
+chmod +x ./*.sh
+for script in ./*.sh; do bash "$script"; done
+cd ..
+```
+
+### 9. 📄 Document & Note Applications
+```bash
+cd document-apps
+chmod +x ./*.sh
+for script in ./*.sh; do bash "$script"; done
+cd ..
+```
+
+### 10. 🎨 Creative & Media Applications
+```bash
+cd creative-apps
+chmod +x ./*.sh
+for script in ./*.sh; do bash "$script"; done
+cd ..
+```
+
+### 11. 🔍 Hardware & Disk Analysis
+```bash
+cd hardware-analysis
 chmod +x ./*.sh
 for script in ./*.sh; do bash "$script"; done
 cd ..
@@ -113,6 +150,9 @@ cd ..
 | Script | Software | Description |
 |---|---|---|
 | `oh-my-zsh.sh` | **Zsh & Oh My Zsh** | Zsh shell + Oh My Zsh framework — sets Zsh as default shell |
+| `fish.sh` | **Fish Shell** | Smart and user-friendly command line shell |
+| `vim.sh` | **Vim** | Highly configurable text editor |
+| `unimatrix.sh` | **Unimatrix** | Python-based Matrix digital rain terminal screen |
 | `bat.sh` | **bat** (`batcat`) | Modern `cat` clone with syntax highlighting and Git integration |
 | `bottom.sh` | **bottom** (`btm`) | Graphical process and system monitor |
 | `btop.sh` | **btop** | Resource monitor for CPU, RAM, disks, network and processes |
@@ -127,7 +167,6 @@ cd ..
 | `htop.sh` | **htop** | Interactive process viewer and system monitor |
 | `jq.sh` | **jq** | Lightweight command-line JSON processor |
 | `lazygit.sh` | **lazygit** | Simple terminal UI for git workflows |
-| `localsend.sh` | **LocalSend** | Cross-platform local network file sharing |
 | `ncdu.sh` | **ncdu** | NCurses disk usage analyzer |
 | `neofetch.sh` | **neofetch** | CLI system info display tool |
 | `nvtop.sh` | **nvtop** | GPU task monitor (Nvidia, AMD, Intel) |
@@ -177,6 +216,68 @@ cd ..
 |---|---|---|
 | `antigravity.sh` | **Google Antigravity** | Google Antigravity developer agent |
 | `gnome-extension-manager.sh` | **GNOME Extension Manager** | Manage GNOME Shell extensions |
+| `localsend.sh` | **LocalSend** | Cross-platform local network file sharing |
 | `multipass.sh` | **Multipass** | Canonical lightweight Ubuntu VM manager |
 | `postman.sh` | **Postman** | API design, testing, and collaboration platform |
 | `virtualbox.sh` | **VirtualBox** | Oracle VM VirtualBox hypervisor |
+
+---
+
+### ☕ Daily Applications (`daily-apps/`)
+| Script | Software | Description |
+|---|---|---|
+| `alacritty.sh` | **Alacritty** | Fast, GPU-accelerated terminal emulator |
+| `bitwarden.sh` | **Bitwarden** | Secure cloud-synced password manager |
+| `copyq.sh` | **CopyQ** | Advanced clipboard manager with searchable history |
+| `flameshot.sh` | **Flameshot** | Powerful screenshot and annotation tool |
+| `kdeconnect.sh` | **KDE Connect** | Seamless device integration and clipboard sharing |
+| `keepassxc.sh` | **KeePassXC** | Local, encrypted offline password manager |
+| `kitty.sh` | **Kitty** | Fast, feature-rich, GPU-based terminal emulator |
+| `mpv.sh` | **MPV** | Lightweight, high-performance media player |
+| `protonvpn.sh` | **ProtonVPN** | Secure VPN client for Linux (GNOME) |
+| `qbittorrent.sh` | **qBittorrent** | Open-source BitTorrent client |
+| `rustdesk.sh` | **RustDesk** | Open-source remote desktop software |
+| `spotify.sh` | **Spotify** | Music streaming desktop client |
+| `syncthing.sh` | **Syncthing** | Continuous, decentralized peer-to-peer file sync |
+| `telegram.sh` | **Telegram** | Telegram desktop messaging client |
+| `thunderbird.sh` | **Thunderbird** | Email, calendar, and contacts client |
+| `vlc.sh` | **VLC Media Player** | Versatile cross-platform multimedia player |
+| `whatsapp.sh` | **WhatsApp for Linux** | WhatsApp desktop client for Linux |
+
+---
+
+### 📄 Document & Note Applications (`document-apps/`)
+| Script | Software | Description |
+|---|---|---|
+| `calibre.sh` | **Calibre** | E-book manager, reader, and format converter |
+| `joplin.sh` | **Joplin** | Open-source note-taking app with end-to-end encryption |
+| `libreoffice.sh` | **LibreOffice** | Comprehensive open-source office suite |
+| `obsidian.sh` | **Obsidian** | Extensible Markdown-based knowledge base and notes |
+| `onlyoffice.sh` | **ONLYOFFICE** | Highly compatible office editors for docs, sheets, slides |
+| `thorium-reader.sh` | **Thorium Reader** | Modern, accessible EPUB and e-book reader |
+| `yacreader.sh` | **YACReader** | Comic book reader and library organizer |
+
+---
+
+### 🎨 Creative & Media Applications (`creative-apps/`)
+| Script | Software | Description |
+|---|---|---|
+| `ardour.sh` | **Ardour** | Digital audio workstation for recording, editing, and mixing |
+| `audacity.sh` | **Audacity** | Multi-track audio editor and recorder |
+| `freecad.sh` | **FreeCAD** | Open-source parametric 3D CAD modeler |
+| `gimp.sh` | **GIMP** | GNU Image Manipulation Program for photo editing |
+| `inkscape.sh` | **Inkscape** | Professional vector graphics editor (SVG, logos, illustrations) |
+| `kdenlive.sh` | **Kdenlive** | Non-linear video editor powered by MLT |
+| `krita.sh` | **Krita** | Professional digital painting and sketching application |
+| `lmms.sh` | **LMMS** | Music production software (beats, synth, sound generation) |
+| `obs.sh` | **OBS Studio** | Video recording and live streaming suite |
+| `openboard.sh` | **OpenBoard** | Interactive whiteboard application for teaching and drawing |
+| `shotcut.sh` | **Shotcut** | Cross-platform open-source video editor |
+| `ventoy.sh` | **Ventoy** | Bootable USB creation tool for ISO/WIM/IMG files |
+
+---
+
+### 🔍 Hardware & Disk Analysis (`hardware-analysis/`)
+| Script | Software | Description |
+|---|---|---|
+| `qdirstat.sh` | **QDirStat** | Qt-based disk usage analyzer for Linux (`kdirStat` / `WinDirStat` equivalent) |
