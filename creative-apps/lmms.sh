@@ -23,3 +23,4 @@ else
     echo "❌ LMMS installation failed." >&2
     exit 1
 fi
+

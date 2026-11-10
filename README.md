@@ -14,7 +14,6 @@ linux-setup/
 ├── cli-tools/            → Terminal tools, shell enhancements & utilities
 ├── runtimes/             → Language runtimes & compilers
 ├── devops-tools/         → DevOps, cloud CLI & container tools
-├── applications/         → System tools & core applications
 ├── daily-apps/           → Daily essentials (clipboard, media, chat, mail, VPN, etc.)
 ├── document-apps/        → Office suites, note-taking, e-readers & book managers
 ├── creative-apps/        → Audio, video, graphics, CAD & bootable disk tools
@@ -79,15 +78,7 @@ for script in ./*.sh; do bash "$script"; done
 cd ..
 ```
 
-### 7. 📦 Core Applications
-```bash
-cd applications
-chmod +x ./*.sh
-for script in ./*.sh; do bash "$script"; done
-cd ..
-```
-
-### 8. ☕ Daily Applications
+### 7. ☕ Daily Applications
 ```bash
 cd daily-apps
 chmod +x ./*.sh
@@ -95,7 +86,7 @@ for script in ./*.sh; do bash "$script"; done
 cd ..
 ```
 
-### 9. 📄 Document & Note Applications
+### 8. 📄 Document & Note Applications
 ```bash
 cd document-apps
 chmod +x ./*.sh
@@ -103,7 +94,7 @@ for script in ./*.sh; do bash "$script"; done
 cd ..
 ```
 
-### 10. 🎨 Creative & Media Applications
+### 9. 🎨 Creative & Media Applications
 ```bash
 cd creative-apps
 chmod +x ./*.sh
@@ -111,7 +102,7 @@ for script in ./*.sh; do bash "$script"; done
 cd ..
 ```
 
-### 11. 🔍 Hardware & Disk Analysis
+### 10. 🔍 Hardware & Disk Analysis
 ```bash
 cd hardware-analysis
 chmod +x ./*.sh
@@ -207,18 +198,9 @@ cd ..
 | `gcp-cli.sh` | **Google Cloud SDK** (`gcloud`) | Google Cloud Platform management CLI |
 | `kubectl.sh` | **Kubectl** | Kubernetes command-line cluster management |
 | `minikube.sh` | **Minikube** | Local single-node Kubernetes cluster |
-| `terraform.sh` | **Terraform** | HashiCorp infrastructure-as-code tool |
-
----
-
-### 📦 Applications (`applications/`)
-| Script | Software | Description |
-|---|---|---|
-| `antigravity.sh` | **Google Antigravity** | Google Antigravity developer agent |
-| `gnome-extension-manager.sh` | **GNOME Extension Manager** | Manage GNOME Shell extensions |
-| `localsend.sh` | **LocalSend** | Cross-platform local network file sharing |
 | `multipass.sh` | **Multipass** | Canonical lightweight Ubuntu VM manager |
 | `postman.sh` | **Postman** | API design, testing, and collaboration platform |
+| `terraform.sh` | **Terraform** | HashiCorp infrastructure-as-code tool |
 | `virtualbox.sh` | **VirtualBox** | Oracle VM VirtualBox hypervisor |
 
 ---
@@ -230,9 +212,11 @@ cd ..
 | `bitwarden.sh` | **Bitwarden** | Secure cloud-synced password manager |
 | `copyq.sh` | **CopyQ** | Advanced clipboard manager with searchable history |
 | `flameshot.sh` | **Flameshot** | Powerful screenshot and annotation tool |
+| `gnome-extension-manager.sh` | **GNOME Extension Manager** | Manage GNOME Shell extensions |
 | `kdeconnect.sh` | **KDE Connect** | Seamless device integration and clipboard sharing |
 | `keepassxc.sh` | **KeePassXC** | Local, encrypted offline password manager |
 | `kitty.sh` | **Kitty** | Fast, feature-rich, GPU-based terminal emulator |
+| `localsend.sh` | **LocalSend** | Cross-platform local network file sharing |
 | `mpv.sh` | **MPV** | Lightweight, high-performance media player |
 | `protonvpn.sh` | **ProtonVPN** | Secure VPN client for Linux (GNOME) |
 | `qbittorrent.sh` | **qBittorrent** | Open-source BitTorrent client |

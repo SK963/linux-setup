@@ -24,3 +24,4 @@ else
     echo "❌ WhatsApp for Linux installation failed." >&2
     exit 1
 fi
+

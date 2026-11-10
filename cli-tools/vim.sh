@@ -23,3 +23,4 @@ else
     echo "❌ Vim installation failed." >&2
     exit 1
 fi
+

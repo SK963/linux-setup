@@ -23,3 +23,4 @@ else
     echo "❌ Ardour installation failed." >&2
     exit 1
 fi
+

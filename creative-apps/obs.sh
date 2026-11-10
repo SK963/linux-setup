@@ -24,3 +24,4 @@ else
     echo "❌ OBS Studio installation failed." >&2
     exit 1
 fi
+

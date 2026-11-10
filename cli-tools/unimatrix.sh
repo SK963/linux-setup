@@ -25,3 +25,4 @@ else
     echo "❌ unimatrix installation failed." >&2
     exit 1
 fi
+

@@ -28,3 +28,4 @@ else
     echo "❌ Spotify installation failed." >&2
     exit 1
 fi
+
