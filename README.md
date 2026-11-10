@@ -17,7 +17,7 @@ chmod +x remap-rightalt-to-ctrl.sh
 
 **Install all CLI tools & utilities:**
 ```bash
-cd tools
+cd cli-tools
 chmod +x ./*.sh
 ./*.sh
 cd ..
@@ -31,7 +31,7 @@ chmod +x ./*.sh
 cd ..
 ```
 
-> **Tip:** You can also run individual scripts as needed (e.g., `./tools/fzf.sh` or `./installers/docker.sh`).
+> **Tip:** You can also run individual scripts as needed (e.g., `./cli-tools/fzf.sh` or `./installers/docker.sh`).
 
 ---
 
@@ -66,7 +66,7 @@ cd ..
 
 ---
 
-### 🛠️ CLI Tools & Utilities (`tools/`)
+### 🛠️ CLI Tools & Utilities (`cli-tools/`)
 
 | Script | Software / Tool | Description |
 |---|---|---|
