@@ -1,14 +1,51 @@
-# Linux Setup & Tooling
+# 💻 Asus Vivobook Setup : Linux (Ubuntu)
 
-This repository provides automated installation and setup scripts for Linux systems (specifically Debian / Ubuntu-based distributions).
+
 
 ---
 
-## Usage
 
-### 💻 Asus Vivobook Setup
+# flow 
+
+setting 
+- remapping the right alt to ctrl key
+
+
+clipboard and screenshot apps
+- cliboard : 
+- screenshot : 
+
+Browser
+- Browser installations : brave , chrome
+
+code editors
+- VS Code 
+- antigravity ide 
+
+
+Resource Monitoring tools 
+- Vitals 
+- extion manager + vitals extiension 
+
+
+runtime 
+- install all the runtimes dir (c , cpp , java , rust ,go , python , node )
+
+terminal & cli tools
+- terminals :
+- Terminal Setting & extensions : oh-my-zsh , other terminal extensions : 
+- terminal softwares : git , gh , curl , bat (batcat ) etc (in the cli-tools)
+
+
+
+
+
+---
+
+# Settings 
 Remap the Right Alt key to Right Control system-wide using `keyd`:
 ```bash
+cd settings
 chmod +x remap-rightalt-to-ctrl.sh
 ./remap-rightalt-to-ctrl.sh
 ```
